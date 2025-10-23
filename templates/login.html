@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<center><form class="oform" action="{{ url_for('autenticar')}}" method="post">
+        <br>
+        <label for="login">Login:</label>
+        <input type="text" name="login" id="login" class="tipoinput" required maxlength="300">
+        <br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="login" class="tipoinput" required maxlength="200">
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" class="tipoinput" required maxlength="100">
+        <br>
+        <br>
+        <input type="submit" name="logcad" value="Logar">
+        <input type="submit" name="logcad" value="Cadastrar">
+        <br>
+        <h1>{{ msg }}</h1>
+</form></center>
+{% endblock %}

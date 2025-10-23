@@ -1,0 +1,12 @@
+1 semana - 
+Destaco que considero essa semana como um período de testes, dado o ínicio dessa fase inicial do projeto.
+
+Em princípio, organizei as templates e o código básico do app.py: isso é, importei as bibliotecas conforme se fariam necessárias e, a partir disso, pesquisei sobre como interligar o Flask e o SQL juntos - o que considerei mais o foco do que a interface em si.
+Essa parte foi, por si só, algo bem díficil de manejar. Não só existem dependências que diferem entre o windows - máquina que uso para fazer o código - e o Linux - sistema que eu deveria utilizar depois -, como, também, reconheci que não teria a liberdade de instalar bibliotecas diretamente em minha máquina. No entanto, considerei entender a lógica das bibliotecas como prioridade e, quanto ao ambiente virtual para o Linux, será um ajuste para depois.
+
+O modo que encontrei envolvia a biblioteca do Flask "SQLAlchemy", que serve justamente para relacionar banco de dados com o próprio Python. Então, utilizando a rota mais simples (SQLite), começo o desenvolvimento do site em si - principalmente, claro, a parte do funcionamento do login.
+Um problema é que, neste momento, estou lidando com uma matéria ainda não abordada em aula. Por esse motivo, não sei dizer com exatidão se esse é o método utilizado no nosso instituto e, portanto, aguardo o próximo atendimento de um dos docentes para futuros ajustes. No momento, o foco é realizar as operações no Windows.
+
+No geral, foi algo relativamente simples de se fazer, vez que temos base forte no que se diz em relação ao Flask. Contudo, aprendi algumas operações novas do próprio Python, como __repr__(), que retorna exatamente o que foi colocado no script/console; self, que é como um placeholder para o último arquivo que se refere na lógica; db.session.add(), db.session.remove() e db.session.commit(), sendo as duas primeiras operações CRUD básicas (adicionar e remover), e a última sendo o método de confirmação destas operações.
+
+

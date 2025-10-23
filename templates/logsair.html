@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <center><h1>Tem certeza de que deseja terminar a sessão?</h1></center>
+    <br>
+    <br>
+    <center>
+        <form class="oform" action="{{ url_for('confirmar')}}" method="post" enctype="multipart/form-data">
+            <input type="submit" name="escolha" value="Sim">
+            <input type="submit" name="escolha" value="Não">
+        </form>
+    </center>
+{% endblock %}
