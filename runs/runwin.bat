@@ -13,7 +13,7 @@ IF NOT EXIST "runs\venv" (
 call runs\venv\Scripts\activate
 @REM ^ Call chama um script externo no bat ^
 python -m pip install -r requisicoes\bibliotecas.txt
-@REM ^ Instala as requisições para o código funcionar ^
+@REM ^ Instala as requisições (bibliotecas) para o código funcionar ^
 echo Ambiente pronto.
 
 set FLASK_APP=app.py
